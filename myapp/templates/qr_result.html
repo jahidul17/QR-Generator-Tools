@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+  QR Result 
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container mt-5 text-center align-items-center">
+        <h2>{{res_name}}</h2>
+        <img src="{{ qr_url }}" alt="QR Code" style="border: 1px solid #D3D3D3; ">
+        <div>
+            <a href="{{qr_url}}" download="{{file_name}}" class="btn btn-primary mt-3">Download QR Code</a>
+        </div>
+        <small>Thank you for using our QR Code Generator Tool</small>
+    </div>
+
+{% endblock %}
