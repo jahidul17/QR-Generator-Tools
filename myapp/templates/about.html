@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+  About Us Page
+{% endblock %}
+
+
+{% block content %}
+    <div class="container" style="width: 600px; border: 1px solid #D3D3D3; padding: 30px; margin-top: 30px;border-radius: 10px;">
+      <h2>About Us</h2>
+      <p>Welcome to our QR Code Generator application! Here you can create custom QR codes for various purposes.</p>
+      <p>Feel free to explore and generate your own QR codes easily.</p>
+    </div>
+    <div class="container mt-5">
+      <h3>Ababil Flocks Team</h3>
+      <ul>
+        <li>Zahidul Islam - Junior Backend Developer</li>
+        <li>Ferdaous Shoeb - Game Developer</li>
+        <li>Md Salman - UI/UX Designer</li>        
+        <li>Maliha Akther Disa  - Developer</li>
+        <li>Mahfujur Rahman Tonmoy - Analyser</li>
+        <li>Akash Roy - Frontend Developer</li>
+        <li>Aysha Akther Sorna - Project Manager</li>
+        
+      </ul>
+    </div>
+    <div class="container mt-5">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or feedback, please reach out to us via the <a href="{% url 'contact' %}">Contact</a> page.</p>
+    </div>
+
+{% endblock %}

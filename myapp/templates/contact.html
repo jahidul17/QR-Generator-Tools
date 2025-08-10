@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Contact Us
+{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh; margin-top: 30px;">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="access_key" value="a5b424f2-44aa-4c14-8a9a-0533ed5a4766">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
