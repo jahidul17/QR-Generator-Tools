@@ -19,7 +19,7 @@ A web application built with **Python**, **Django**, and **Bootstrap** that allo
 ## Usage
 
 1. Enter the text or URL you want to encode.
-2. Click the "Generate" button.
+2. Click the "Get QR" button.
 3. View and download your QR code.
 
 
@@ -27,8 +27,8 @@ A web application built with **Python**, **Django**, and **Bootstrap** that allo
 # How to Install a Django Project 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd <project-directory>
+    git clone https://github.com/jahidul17/QR-Generator-Tools.git
+    cd QR-Generator-Tools
     ```
 
 2. **Create and activate a virtual environment:**
